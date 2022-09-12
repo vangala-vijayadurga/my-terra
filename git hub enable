@@ -1,0 +1,14 @@
+this is my git hub 2
+resource "github_repository" "example" {
+  name        = "example"
+  description = "My awesome web page"
+
+  private = false
+
+  pages {
+    source {
+      branch = "master"
+      path   = "/docs"
+    }
+  }
+}
